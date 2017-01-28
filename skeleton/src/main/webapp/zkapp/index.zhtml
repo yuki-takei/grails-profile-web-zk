@@ -1,0 +1,8 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/layouts/main.zhtml"?>
+<html xmlns="native" xmlns:h="xhtml" xmlns:z="zul">
+
+  <h:div>
+    <z:include src="./home.zul" />
+  </h:div>
+
+</html>

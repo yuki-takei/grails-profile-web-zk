@@ -1,0 +1,12 @@
+<zk xmlns:h="xhtml" xmlns:n="native"
+    viewModel="@id('vm') @init('jp.co.weseek.bevelle.vm.IndexVM')">
+
+  <h:span self="@define(content-header)">
+    Home
+  </h:span>
+
+  <vlayout self="@define(content)">
+    Hello ZK Grails3!
+  </vlayout>
+
+</zk>

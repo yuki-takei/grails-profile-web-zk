@@ -1,0 +1,46 @@
+<html xmlns="native" xmlns:h="xhtml" xmlns:z="zul" xmlns:zk="zk">
+<head>
+    <zk:zscript><![CDATA[
+        String contextPath = Executions.getCurrent().getContextPath();
+    ]]></zk:zscript>
+
+    <base href="/" if="${contextPath==''}">
+    <base href="${contextPath}/" if="${contextPath!=''}">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title></title>
+
+    <link rel="stylesheet" href="./assets/zkapp/application.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-black sidebar-mini">
+<div>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h:h1 self="@insert(content-header)"/>
+            <h:div self="@insert(content-breadcrumb)"/>
+        </section>
+
+        <!-- Main content -->
+        <h:section class="content" self="@insert(content)"/>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+</body>
+</html>

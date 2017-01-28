@@ -1,1 +1,10 @@
 description: TODO - Describe your profile
+repositories:
+    - "http://mavensync.zkoss.org/maven2"
+dependencies:
+    compile:
+        - "org.zkoss.zk:zkplus:8.0.2.2"
+        - "org.zkoss.zk:zkbind:8.0.2.2"
+        - "org.zkoss.zk:zhtml:8.0.2.2"
+        - "org.zkoss.theme:atlantic:1.0.5"
+        - "org.zkoss.zk:zkspring-core:3.1.1"
