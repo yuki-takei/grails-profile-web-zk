@@ -1,0 +1,26 @@
+@mixin myfont {
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body {
+  @include myfont;
+  padding: 0;
+}
+
+[layout=row] {
+  flex-direction: row;
+}
+
+// Override ZK fonts
+// See https://www.zkoss.org/wiki/ZK_Developer's_Reference/Theming_and_Styling/Customizing_Standard_Themes
+[class*="z-"]:not([class*="z-icon-"]) {
+  @include myfont;
+}
+// Override AdminLTE fonts
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  @include myfont;
+}
+.main-header .logo {
+  @include myfont;
+}
