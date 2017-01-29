@@ -2,7 +2,7 @@ package @grails.codegen.defaultPackage.path@
 
 import grails.transaction.Transactional
 import groovy.util.logging.Commons
-import org.zkoss.zk.ui.Component
+import org.springframework.stereotype.Component
 import org.zkoss.zk.ui.select.annotation.VariableResolver
 import org.zkoss.zkplus.spring.DelegatingVariableResolver
 
