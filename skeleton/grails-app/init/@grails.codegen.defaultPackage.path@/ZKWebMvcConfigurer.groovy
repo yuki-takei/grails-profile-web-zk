@@ -50,6 +50,7 @@ class ZKWebMvcConfigurer extends WebMvcConfigurerAdapter {
 
         PrefixedViewResolver viewResolver = new PrefixedViewResolver("zkapp:")
         viewResolver.setSuffix(".zhtml")
+        viewResolver.setOrder(1)
         return viewResolver
     }
 
