@@ -1,4 +1,9 @@
 description: TODO - Describe your profile
+buildDependencies:
+    classpath:
+        - "com.bertramlabs.plugins:asset-pipeline-gradle:2.11.6"
+buildPlugins:
+    - "asset-pipeline"
 repositories:
     - "http://mavensync.zkoss.org/maven2"
 dependencies:
@@ -8,3 +13,5 @@ dependencies:
         - "org.zkoss.zk:zhtml:8.0.2.2"
         - "org.zkoss.theme:atlantic:1.0.5"
         - "org.zkoss.zk:zkspring-core:3.1.1"
+    runtime:
+        - "com.bertramlabs.plugins:asset-pipeline-grails:2.11.6"
