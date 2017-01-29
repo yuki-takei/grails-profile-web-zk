@@ -48,7 +48,7 @@ class ZKWebMvcConfigurer extends WebMvcConfigurerAdapter {
     InternalResourceViewResolver prefixedViewResolver() {
         log.info("initialize PrefixedViewResolver")
 
-        PrefixedViewResolver viewResolver = new PrefixedViewResolver("mng:")
+        PrefixedViewResolver viewResolver = new PrefixedViewResolver("zkapp:")
         viewResolver.setSuffix(".zhtml")
         return viewResolver
     }

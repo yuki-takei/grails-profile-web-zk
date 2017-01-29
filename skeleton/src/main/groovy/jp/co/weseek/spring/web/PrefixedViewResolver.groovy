@@ -31,13 +31,13 @@ class PrefixedViewResolver extends InternalResourceViewResolver {
 
     @Override
     protected boolean canHandle(String viewName, Locale locale) {
-        return (this.hasMngPrefix(viewName) && super.canHandle(viewName, locale))
+        return (this.hasPrefix(viewName) && super.canHandle(viewName, locale))
     }
 
     @Override
     protected AbstractUrlBasedView buildView(String viewName) throws Exception {
         assert viewName != null
-        assert this.hasMngPrefix(viewName)
+        assert this.hasPrefix(viewName)
 
         String fixedViewName = viewName.substring(canHandlePrefix.length())  // mng: 以降を取得
         return super.buildView(fixedViewName)
@@ -48,7 +48,7 @@ class PrefixedViewResolver extends InternalResourceViewResolver {
      * @param viewName
      * @return T or F
      */
-    private boolean hasMngPrefix(viewName) {
+    private boolean hasPrefix(viewName) {
         return viewName =~ /^${canHandlePrefix}.+$/
     }
 }
