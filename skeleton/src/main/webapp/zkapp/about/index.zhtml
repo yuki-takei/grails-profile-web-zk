@@ -1,0 +1,20 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/layouts/main.zhtml"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<html xmlns:n="native" xmlns:h="xhtml" xmlns:z="zul" viewModel="@id('vm') @init(aboutVM)">
+
+  <h:span self="@define(content-header)">
+    <z:label zclass="header" value="About"/>
+  </h:span>
+
+  <h:p self="@define(content-breadcrumb)">
+    <z:a href="/zkapp/">Home</z:a>
+    > About
+  </h:p>
+
+  <h:div id="main">
+      <z:include self="@define(content)" src="./about.zul" />
+  </h:div>
+
+</html>
+
+

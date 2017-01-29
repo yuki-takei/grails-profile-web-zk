@@ -25,12 +25,11 @@
 <body class="hold-transition skin-black sidebar-mini">
 <div>
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div>
         <!-- Content Header (Page header) -->
         <section class="content-header">
+            <small><h:div self="@insert(content-breadcrumb)"/></small>
             <h:h1 self="@insert(content-header)"/>
-            <h:div self="@insert(content-breadcrumb)"/>
         </section>
 
         <!-- Main content -->
