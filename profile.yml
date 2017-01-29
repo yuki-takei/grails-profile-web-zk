@@ -13,3 +13,5 @@ dependencies:
         - "org.zkoss.zk:zhtml:8.0.2.2"
         - "org.zkoss.theme:atlantic:1.0.5"
         - "org.zkoss.zk:zkspring-core:3.1.1"
+    assets:
+        - "com.bertramlabs.plugins:sass-asset-pipeline:2.11.6"
