@@ -1,0 +1,5 @@
+// http://www.marcelustrojahn.com/2015/12/integrating-zk-framework-on-a-spring-boot-application/
+// > one of the ZK’s dependencies also pulled slf4j-jdk14 which then conflicted with logback.
+configurations {
+    all*.exclude group: 'org.slf4j', module: 'slf4j-jdk14'
+}
