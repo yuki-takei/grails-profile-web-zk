@@ -48,7 +48,7 @@ class ZKWebMvcConfigurer extends WebMvcConfigurerAdapter {
     InternalResourceViewResolver prefixedViewResolver() {
         log.info("initialize PrefixedViewResolver")
 
-        PrefixedViewResolver viewResolver = new PrefixedViewResolver("zkapp:")
+        PrefixedViewResolver viewResolver = new PrefixedViewResolver("zhtml:")
         viewResolver.setSuffix(".zhtml")
         viewResolver.setOrder(1)
         return viewResolver
@@ -58,7 +58,7 @@ class ZKWebMvcConfigurer extends WebMvcConfigurerAdapter {
     void addViewControllers(ViewControllerRegistry registry) {
         log.info("add ViewController for '/zkapp/**'")
 
-        registry.addViewController("/zkapp/**").setViewName("zkapp:index");
+        registry.addViewController("/zkapp/**").setViewName("zhtml:index");
     }
 
 }
