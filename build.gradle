@@ -15,16 +15,15 @@ group 'org.grails.profiles'
 version '1.0.0-SNAPSHOT'
 
 grailsPublish {
-    // TODO: Provide values here
     user = 'user'
     key = 'key'
-    githubSlug = 'foo/bar'
+    githubSlug = 'yuki-takei/grails-profile-zk'
     license {
         name = 'Apache-2.0'
     }
-    title = "My Profile"
-    desc = "Full profile description"
-    developers = [johndoe:"John Doe"]
+    title = "ZK Profile"
+    desc = "A profile for creating applications using ZK"
+    developers = ["yuki-takei": "Yuki Takei"]
 }
 
 repositories {
