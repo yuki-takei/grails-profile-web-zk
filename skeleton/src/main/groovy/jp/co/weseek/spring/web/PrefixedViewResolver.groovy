@@ -39,7 +39,7 @@ class PrefixedViewResolver extends InternalResourceViewResolver {
         assert viewName != null
         assert this.hasPrefix(viewName)
 
-        String fixedViewName = viewName.substring(canHandlePrefix.length())  // mng: 以降を取得
+        String fixedViewName = viewName.substring(canHandlePrefix.length())  // trim prefix
         return super.buildView(fixedViewName)
     }
 
