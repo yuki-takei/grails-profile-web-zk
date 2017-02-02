@@ -17,7 +17,7 @@ version '1.0.1'
 grailsPublish {
     user = System.getenv('BINTRAY_USER')
     key = System.getenv('BINTRAY_KEY')
-    githubSlug = 'yuki-takei/grails-profile-zk'
+    githubSlug = 'yuki-takei/grails-profile-web-zk'
     license {
         name = 'Apache-2.0'
     }
